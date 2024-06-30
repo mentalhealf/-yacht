@@ -7,8 +7,8 @@
   color: aqua;
 }
 
-.section-cards {
-  color: aquamarine;
+ul {
+  list-style: none;
 }
 
 .section-gallery {

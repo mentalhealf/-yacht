@@ -1,4 +1,28 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+.header {
+  color: blue;
+}
+
+.section-adventures {
+  color: aqua;
+}
+
+.section-cards {
+  color: aquamarine;
+}
+
+.section-gallery {
+  color: blueviolet;
+}
+
+.section__form {
+  color: coral;
+}
+
+.section-customers {
+  color: cornflowerblue;
+}
+
 .footer-p {
   color: green;
 }/*# sourceMappingURL=index.css.map */

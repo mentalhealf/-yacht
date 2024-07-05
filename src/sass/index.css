@@ -22,7 +22,12 @@
 }
 
 .section__form {
-  color: coral;
+  background-color: #11131f;
+  color: rgb(246, 245, 239);
+}
+
+.boat__uno {
+  background-color: #11131f;
 }
 
 .section-customers {

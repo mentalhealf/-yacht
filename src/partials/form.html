@@ -1,24 +1,29 @@
 <section class="section__form">
     <div class="container">
-        <h2>Rent a yacht now</h2>
-        <picture class="hata__x">
-            <source srcset="" />
-            <img src="" alt="Кіт" />
+        <div class="picture__text">
+        <h2 class="big__title">Rent a yacht now</h2>
+        <picture class="boat__uno">
+            <source srcset="./images/form/img__yaht@1x.png 1x, ./images/form/img__yaht@2x.png 2x" />
+            <img src="./images/form/img__yaht@1x.png" alt="Кіт" />
         </picture>
-        <form>
-            <label>
-                <input>
+    </div>
+        <form class="form">
+            <label class="form__label">
+                <input class="form__input" name="text" placeholder="Full Name">
             </label>
-            <label>
-                <input>
+            <label class="form__label">
+                <input class="form__input" name="email" placeholder="Email">
             </label>
-            <label>
-                <input>
+            <label class="form__label">
+                <input class="form__input" name="tel" placeholder="Phone number">
             </label>
-            <label>
-                <input>
-            </label>
+            <textarea class="form__textarea" name="comment" placeholder="Comment">
         </form>
-        <button>Send</button>
+        <button class="form__btn">Send
+            <svg class="form__svg">
+            <use class="form__use">
+        </use>
+    </svg>
+</button>
     </div>
 </section>

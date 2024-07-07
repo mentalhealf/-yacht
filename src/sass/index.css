@@ -18,7 +18,12 @@
 }
 
 .section-gallery {
-  color: blueviolet;
+  background-color: #11131F;
+  color: #11131F;
+}
+
+.gallery-txt-box {
+  background-color: #F6F5EF;
 }
 
 .section__form {

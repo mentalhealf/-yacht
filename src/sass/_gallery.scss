@@ -13,8 +13,7 @@
   filter: blur(200px);
   background: rgb(145, 175, 186);
   opacity: 0.6;
-  transform: rotate(-45.00deg);
-  border: 2px solid black;
+  transform: rotate(-45deg);
 }
 
 .gallery-pics {
@@ -22,7 +21,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 44px;
+  gap: 30px;
 }
 
 .diving-card {
@@ -31,7 +30,7 @@
   background: $shade-color, url(../images/gallery/diving@1x.jpeg);
   border-radius: 40px;
   position: relative;
-  margin-left: -20px;
+  margin-left: -22px;
 }
 
 .diving-txt-box {
@@ -80,7 +79,7 @@
   border-radius: 40px;
   position: relative;
   margin-left: 372px;
-  margin-top: 20px;
+  margin-top: 34px;
 }
 
 .sunbathing-txt-box {
@@ -96,4 +95,117 @@
   position: absolute;
   left: 32px;
   top: 272px;
+}
+// tablet scss
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section-gallery {
+    height: 1437px;
+    width: 768px;
+  }
+  .white-blur {
+    width: 414px;
+    height: 414px;
+    margin: 146px -100px;
+  }
+  .gallery-pics {
+    gap: 32px;
+  }
+  .diving-card {
+    width: 704px;
+    height: 632px;
+    background: $shade-color, url(../images/gallery/diving@2x.jpeg);
+    margin-left: -5px;
+    background-size: cover;
+  }
+  .diving-txt-box {
+    left: 32px;
+    top: 552px;
+  }
+  .fishing-card {
+    width: 400px;
+    height: 389px;
+    background: $shade-color, url(../images/gallery/fishing@2x.jpeg);
+    margin-top: 3px;
+    margin-left: 296px;
+    background-size: cover;
+  }
+  .fishing-txt-box {
+    left: 32px;
+    top: 309px;
+  }
+  .sunbathing-card {
+    background: $shade-color, url(../images/gallery/sunbathing@2x.jpeg);
+    margin-left: 44px;
+    margin-top: 3px;
+    background-size: cover;
+  }
+  .sunbathing-txt-box {
+    width: 148px;
+    height: 48px;
+    font-size: 18px;
+    padding: 14px 28px;
+    left: 32px;
+    top: 272px;
+  }
+}
+//phone scss
+@media screen and (max-width: 480px) {
+  .section-gallery {
+    height: 1053px;
+    width: 375px;
+  }
+  .white-blur {
+    width: 414px;
+    height: 414px;
+    margin: 146px -100px;
+  }
+  .gallery-pics {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .diving-card {
+    width: 335px;
+    height: 335px;
+    background: $shade-color, url(../images/gallery/diving@2x.jpeg);
+    margin-left: -20px;
+    background-size: cover;
+  }
+  .diving-txt-box {
+    width: 95px;
+    height: 43px;
+    font-size: 14px;
+    left: 24px;
+    top: 268px;
+  }
+  .fishing-card {
+    width: 335px;
+    height: 335px;
+    background: $shade-color, url(../images/gallery/fishing@2x.jpeg);
+    margin-top: -3px;
+    margin-left: -20px;
+    background-size: cover;
+  }
+  .fishing-txt-box {
+    width: 100px;
+    height: 43px;
+    font-size: 14px;
+    left: 24px;
+    top: 268px;
+  }
+  .sunbathing-card {
+    width: 335px;
+    height: 335px;
+    background: $shade-color, url(../images/gallery/sunbathing@2x.jpeg);
+    margin-left: -20px;
+    margin-top: -3px;
+    background-size: cover;
+  }
+  .sunbathing-txt-box {
+    width: 128px;
+    height: 43px;
+    font-size: 14px;
+    left: 24px;
+    top: 268px;
+  }
 }

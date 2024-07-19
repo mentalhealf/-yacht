@@ -67,6 +67,7 @@
 
 .diving-txt-box {
   background-color: #F6F5EF;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 48px;
@@ -90,6 +91,7 @@
 
 .fishing-txt-box {
   background-color: #F6F5EF;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 48px;
@@ -114,6 +116,7 @@
 
 .sunbathing-txt-box {
   background-color: #F6F5EF;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 48px;
@@ -169,6 +172,7 @@
     background-size: cover;
   }
   .sunbathing-txt-box {
+    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     height: 48px;

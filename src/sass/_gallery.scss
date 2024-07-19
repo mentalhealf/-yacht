@@ -1,3 +1,211 @@
-.section-gallery{
-    color: blueviolet;
+.section-gallery {
+  background-color: $dark-blue-color;
+  color: $dark-blue-color;
+  height: 1048px;
+  position: relative;
+}
+
+.white-blur {
+  position: absolute;
+  width: 414px;
+  height: 414px;
+  margin: 146px -100px;
+  filter: blur(200px);
+  background: rgb(145, 175, 186);
+  opacity: 0.6;
+  transform: rotate(-45deg);
+}
+
+.gallery-pics {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.gallery-txt {
+  text-decoration: none;
+  font-family: $DM-sans-font-family;
+  font-weight: 700;
+  text-align: center;
+  font-size: 18px;
+}
+
+.diving-card {
+  width: 712px;
+  height: 632px;
+  background: $shade-color, url(../images/gallery/diving@1x.jpeg);
+  border-radius: 40px;
+  position: relative;
+  margin-left: -22px;
+}
+
+.diving-txt-box {
+  background-color: $white-color;
+  width: fit-content;
+  height: 48px;
+  padding: 14px 28px;
+  position: absolute;
+  left: 32px;
+  top: 552px;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 60px;
+}
+
+.fishing-card {
+  width: 440px;
+  height: 428px;
+  background: $shade-color, url(../images/gallery/fishing@1x.jpeg);
+  border-radius: 40px;
+  position: relative;
+  margin-top: 204px;
+}
+
+.fishing-txt-box {
+  background-color: $white-color;
+  width: fit-content;
+  height: 48px;
+  padding: 14px 28px;
+  position: absolute;
+  left: 32px;
+  top: 348px;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 60px;
+}
+
+.sunbathing-card {
+  width: 436px;
+  height: 352px;
+  background: $shade-color, url(../images/gallery/sunbathing@1x.jpeg);
+  border-radius: 40px;
+  position: relative;
+  margin-left: 372px;
+  margin-top: 34px;
+}
+
+.sunbathing-txt-box {
+  background-color: $white-color;
+  width: fit-content;
+  height: 48px;
+  padding: 14px 28px;
+  position: absolute;
+  left: 32px;
+  top: 272px;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 60px;
+}
+// tablet scss
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section-gallery {
+    height: 1437px;
+    width: 768px;
+  }
+  .white-blur {
+    width: 414px;
+    height: 414px;
+    margin: 146px -100px;
+  }
+  .gallery-pics {
+    gap: 32px;
+  }
+  .diving-card {
+    width: 704px;
+    height: 632px;
+    background: $shade-color, url(../images/gallery/diving@2x.jpeg);
+    margin-left: -5px;
+    background-size: cover;
+  }
+  .diving-txt-box {
+    left: 32px;
+    top: 552px;
+  }
+  .fishing-card {
+    width: 400px;
+    height: 389px;
+    background: $shade-color, url(../images/gallery/fishing@2x.jpeg);
+    margin-top: 3px;
+    margin-left: 296px;
+    background-size: cover;
+  }
+  .fishing-txt-box {
+    left: 32px;
+    top: 309px;
+  }
+  .sunbathing-card {
+    background: $shade-color, url(../images/gallery/sunbathing@2x.jpeg);
+    margin-left: 44px;
+    margin-top: 3px;
+    background-size: cover;
+  }
+  .sunbathing-txt-box {
+    width: fit-content; //148px
+    height: 48px;
+    left: 32px;
+    top: 272px;
+  }
+  .gallery-txt {
+    font-size: 18px;
+  }
+}
+//phone scss
+@media screen and (max-width: 480px) {
+  .section-gallery {
+    height: 1053px;
+    width: 375px;
+  }
+  .white-blur {
+    width: 414px;
+    height: 414px;
+    margin: 146px -100px;
+  }
+  .gallery-pics {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .gallery-txt {
+    font-size: 14px;
+  }
+  .diving-card {
+    width: 335px;
+    height: 335px;
+    background: $shade-color, url(../images/gallery/diving@2x.jpeg);
+    margin-left: -20px;
+    background-size: cover;
+  }
+  .diving-txt-box {
+    height: 43px;
+    left: 24px;
+    top: 268px;
+  }
+  .fishing-card {
+    width: 335px;
+    height: 335px;
+    background: $shade-color, url(../images/gallery/fishing@2x.jpeg);
+    margin-top: -3px;
+    margin-left: -20px;
+    background-size: cover;
+  }
+  .fishing-txt-box {
+    height: 43px;
+    left: 24px;
+    top: 268px;
+  }
+  .sunbathing-card {
+    width: 335px;
+    height: 335px;
+    background: $shade-color, url(../images/gallery/sunbathing@2x.jpeg);
+    margin-left: -20px;
+    margin-top: -3px;
+    background-size: cover;
+  }
+  .sunbathing-txt-box {
+    height: 43px;
+    left: 24px;
+    top: 268px;
+  }
 }

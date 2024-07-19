@@ -43,6 +43,14 @@
   gap: 30px;
 }
 
+.gallery-txt {
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 18px;
+}
+
 .diving-card {
   width: 712px;
   height: 632px;
@@ -54,17 +62,16 @@
 
 .diving-txt-box {
   background-color: #F6F5EF;
-  width: 106px;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 48px;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  border-radius: 60px;
-  text-align: center;
-  font-size: 18px;
   padding: 14px 28px;
   position: absolute;
   left: 32px;
   top: 552px;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 60px;
 }
 
 .fishing-card {
@@ -78,17 +85,16 @@
 
 .fishing-txt-box {
   background-color: #F6F5EF;
-  width: 113px;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 48px;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  border-radius: 60px;
-  text-align: center;
-  font-size: 18px;
   padding: 14px 28px;
   position: absolute;
   left: 32px;
   top: 348px;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 60px;
 }
 
 .sunbathing-card {
@@ -103,17 +109,16 @@
 
 .sunbathing-txt-box {
   background-color: #F6F5EF;
-  width: 148px;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 48px;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  border-radius: 60px;
-  text-align: center;
-  font-size: 18px;
   padding: 14px 28px;
   position: absolute;
   left: 32px;
   top: 272px;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 60px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -159,12 +164,14 @@
     background-size: cover;
   }
   .sunbathing-txt-box {
-    width: 148px;
+    width: -moz-fit-content;
+    width: fit-content;
     height: 48px;
-    font-size: 18px;
-    padding: 14px 28px;
     left: 32px;
     top: 272px;
+  }
+  .gallery-txt {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -182,6 +189,9 @@
     flex-wrap: wrap;
     gap: 32px;
   }
+  .gallery-txt {
+    font-size: 14px;
+  }
   .diving-card {
     width: 335px;
     height: 335px;
@@ -190,9 +200,7 @@
     background-size: cover;
   }
   .diving-txt-box {
-    width: 95px;
     height: 43px;
-    font-size: 14px;
     left: 24px;
     top: 268px;
   }
@@ -205,9 +213,7 @@
     background-size: cover;
   }
   .fishing-txt-box {
-    width: 100px;
     height: 43px;
-    font-size: 14px;
     left: 24px;
     top: 268px;
   }
@@ -220,9 +226,7 @@
     background-size: cover;
   }
   .sunbathing-txt-box {
-    width: 128px;
     height: 43px;
-    font-size: 14px;
     left: 24px;
     top: 268px;
   }

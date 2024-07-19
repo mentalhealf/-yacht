@@ -1,7 +1,52 @@
 .section__form {
   background-color: #11131f;
   color: rgba(246, 245, 239, 1);
+  color: rgba(246, 245, 239, 1);
+}
+.did {
+  display: flex;
+  gap: 188px;
+  width: 916;
+}
+.picture__text {
+  outline: chartreuse solid 2px;
+  width: 282px;
+}
+.big__title {
+  font-family: DM Sans;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 66px;
+  letter-spacing: 0.045em;
+  color: rgba(246, 245, 239, 1);
+}
+.form {
+  outline: rgb(0, 98, 255) solid 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.form__label {
+  border-bottom: 1px solid rgba(246, 245, 239, 1);
+}
+.form__input {
+  width: 443px;
+  background-color: #11131f;
+  color: rgba(246, 245, 239, 1);
+  border: none;
+}
+.form__input:focus {
+  outline: none;
+}
+.form__textarea {
+  resize: none;
 }
 .boat__uno {
   background-color: #11131f;
+}
+.form__btn {
+  background-color: #11131f;
+}
+.form__svg {
+  fill: rgba(246, 245, 239, 1);
 }

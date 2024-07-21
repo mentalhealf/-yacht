@@ -6,10 +6,6 @@
   background-color: #11131F;
 }
 
-li {
-  list-style: none;
-}
-
 .header {
   color: #F6F5EF;
 }
@@ -248,6 +244,8 @@ li {
   background-color: #11131f;
   color: rgb(246, 245, 239);
   color: rgb(246, 245, 239);
+  padding-bottom: 164px;
+  padding-top: 164px;
 }
 
 .did {
@@ -275,6 +273,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 28px;
+  margin-top: 9px;
 }
 
 .form__label {
@@ -292,8 +291,40 @@ li {
   outline: none;
 }
 
+input::-moz-placeholder {
+  color: rgb(246, 245, 239);
+}
+
+input:-ms-input-placeholder {
+  color: rgb(246, 245, 239);
+}
+
+input::placeholder {
+  color: rgb(246, 245, 239);
+}
+
 .form__textarea {
   resize: none;
+  border: none;
+  border-bottom: 1px solid rgb(246, 245, 239);
+  background-color: #11131f;
+  color: rgb(246, 245, 239);
+}
+
+.form__textarea:focus {
+  outline: none;
+}
+
+textarea::-moz-placeholder {
+  color: rgb(246, 245, 239);
+}
+
+textarea:-ms-input-placeholder {
+  color: rgb(246, 245, 239);
+}
+
+textarea::placeholder {
+  color: rgb(246, 245, 239);
 }
 
 .boat__uno {
@@ -302,10 +333,22 @@ li {
 
 .form__btn {
   background-color: #11131f;
+  color: rgb(246, 245, 239);
+  width: 132px;
+  height: 48px;
+  padding: 14px 28px 14px 28px;
+  gap: 16px;
+  border-radius: 60px;
+  border: 1px solid rgb(246, 245, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form__svg {
   fill: rgb(246, 245, 239);
+  width: 18px;
+  height: 9px;
 }
 
 .section-customers {

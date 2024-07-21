@@ -2,6 +2,8 @@
   background-color: #11131f;
   color: rgba(246, 245, 239, 1);
   color: rgba(246, 245, 239, 1);
+  padding-bottom: 164px;
+  padding-top: 164px;
 }
 .did {
   display: flex;
@@ -25,6 +27,7 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
+  margin-top: 9px;
 }
 .form__label {
   border-bottom: 1px solid rgba(246, 245, 239, 1);
@@ -38,15 +41,40 @@
 .form__input:focus {
   outline: none;
 }
+input::placeholder{
+  color:rgba(246, 245, 239, 1) ;
+}
 .form__textarea {
   resize: none;
+  border: none;
+  border-bottom: 1px solid rgba(246, 245, 239, 1);
+  background-color: #11131f;
+  color: rgba(246, 245, 239, 1);
+}
+.form__textarea:focus {
+  outline: none;
+}
+textarea::placeholder{
+  color:rgba(246, 245, 239, 1) ;
 }
 .boat__uno {
   background-color: #11131f;
 }
 .form__btn {
   background-color: #11131f;
+  color: rgba(246, 245, 239, 1);
+  width: 132px;
+  height: 48px;
+  padding: 14px 28px 14px 28px;
+  gap: 16px;
+  border-radius: 60px;
+  border: 1px solid rgba(246, 245, 239, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .form__svg {
   fill: rgba(246, 245, 239, 1);
+  width: 18px;
+  height: 9px;
 }

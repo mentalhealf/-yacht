@@ -351,6 +351,14 @@ textarea::placeholder {
   height: 9px;
 }
 
+.ghost {
+  color: rgb(145, 175, 186);
+  width: 414px;
+  height: 414px;
+  opacity: 60%;
+  box-shadow: 10px 10px 50px 120px rgb(145, 175, 186);
+}
+
 .section-customers {
   color: cornflowerblue;
 }

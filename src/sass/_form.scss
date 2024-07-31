@@ -41,8 +41,8 @@
 .form__input:focus {
   outline: none;
 }
-input::placeholder{
-  color:rgba(246, 245, 239, 1) ;
+input::placeholder {
+  color: rgba(246, 245, 239, 1);
 }
 .form__textarea {
   resize: none;
@@ -54,8 +54,8 @@ input::placeholder{
 .form__textarea:focus {
   outline: none;
 }
-textarea::placeholder{
-  color:rgba(246, 245, 239, 1) ;
+textarea::placeholder {
+  color: rgba(246, 245, 239, 1);
 }
 .boat__uno {
   background-color: #11131f;
@@ -77,4 +77,11 @@ textarea::placeholder{
   fill: rgba(246, 245, 239, 1);
   width: 18px;
   height: 9px;
+}
+.ghost {
+  color: rgba(145, 175, 186, 1);
+  width: 414px;
+  height: 414px;
+  opacity: 60%;
+box-shadow: 10px 10px 50px 120px rgba(145, 175, 186, 1);
 }

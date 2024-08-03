@@ -277,6 +277,9 @@
   gap: 188px;
   width: 916px;
   height: 420px;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -291,19 +294,18 @@
     flex-direction: column;
     height: auto;
     width: 280px;
-    margin-right: 20px;
-    margin-left: 20px;
   }
 }
 .picture__text {
   outline: chartreuse solid 2px;
   width: 282px;
+  margin-right: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .picture__text {
     margin-right: 69px;
-    width: 271px;
+    width: 282px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -313,24 +315,27 @@
 }
 .big__title {
   font-family: DM Sans;
-  font-size: 55px;
   font-weight: 500;
-  line-height: 66px;
-  letter-spacing: 0.045em;
+  letter-spacing: -0.045em;
   color: rgb(246, 245, 239);
   margin-top: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .big__title {
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+}
 @media screen and (min-width: 768px) {
   .big__title {
     font-size: 53px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .big__title {
-    font-size: 36px;
-    line-height: 39.6px;
-    letter-spacing: -0.045em;
+    font-size: 60px;
+    line-height: 66px;
   }
 }
 .form {
@@ -339,18 +344,35 @@
   flex-direction: column;
   gap: 28px;
   margin-top: 0;
+  width: 443px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .form {
     gap: 32px;
     width: 364px;
   }
 }
+@media screen and (max-width: 767px) {
+  .form {
+    width: 280px;
+  }
+}
 .form__label {
   border-bottom: 1px solid rgb(246, 245, 239);
+  width: 443px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .form__label {
+    width: 364px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form__label {
+    width: 280px;
+  }
+}
 .form__input {
   width: 443px;
   background-color: #11131f;
@@ -358,7 +380,7 @@
   border: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .form__input {
     width: 364px;
   }
@@ -425,11 +447,17 @@ input::placeholder {
   border-bottom: 1px solid rgb(246, 245, 239);
   background-color: #11131f;
   color: rgb(246, 245, 239);
+  width: 443px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .form__textarea {
     width: 364px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form__textarea {
+    width: 280px;
   }
 }
 .form__textarea:focus {

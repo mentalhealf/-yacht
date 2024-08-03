@@ -8,10 +8,34 @@
 
 .header {
   color: #F6F5EF;
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  margin-bottom: 0;
 }
 
 .header-logo {
+  width: 216px;
+  height: 23px;
   fill: #F6F5EF;
+  color: #F6F5EF;
+  margin: 36px 700px 36px 22px;
+}
+
+.header-pages-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 24;
+  margin-top: 35px;
+  margin-right: 32px;
+}
+
+.header-line {
+  width: 1216px;
+  height: 10px;
+  background-color: red;
+  z-index: 3;
 }
 
 .section-adventures {

@@ -5,19 +5,16 @@
             <picture class="boat__uno">
                 <source srcset="
                 ./images/form/img__yaht__dekstop@1x.png 1x,
-                ./images/form/img__yaht__dekstop@2x.png 2x "
-                media="(min-width: 1200px)" />
+                ./images/form/img__yaht__dekstop@2x.png 2x " media="(min-width: 1200px)" />
 
                 <source srcset="
                 ./images/form/img__yaht__tablet@1x.png 1x,
-                ./images/form/img__yaht__tablet@2x.png 2x"
-                media="(min-width: 768px)" />
+                ./images/form/img__yaht__tablet@2x.png 2x" media="(min-width: 768px)" />
 
                 <source srcset="
                 ./images/form/img__yaht__mobile@1x.png 1x,
-                ./images/form/img__yaht__mobile@2x.png 2x"
-                media="(max-width: 767px)" />
-                
+                ./images/form/img__yaht__mobile@2x.png 2x" media="(max-width: 767px)" />
+
                 <img src="./images/form/img__yaht__mobile@1x.png" alt="Кіт" />
             </picture>
         </div>
@@ -32,14 +29,23 @@
                 <input class="form__input" name="tel" placeholder="Phone number">
             </label>
             <textarea class="form__textarea" name="comment" placeholder="Comment" id="#" cols="#" rows="5"></textarea>
-            <button class="form__btn">
+            <button class="form__btn btn-open" data-modal-open>
                 <p>Send</p>
                 <svg class="form__svg">
-                    <use class="form__use" href="../symbol-defs.svg#icon-Arrow">
+                    <use class="form__use" href="symbol-defs.svg#icon-Arrow">
                     </use>
                 </svg>
             </button>
         </form>
-        <img src="./images/form/ghost.png" alt="Кіт" class="ghost"/>
+        <img src="./images/form/ghost.png" alt="Кіт" class="ghost" />
+    </div>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn" data-modal-close>Закрити</button>
+            <p>Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in
+                touch shortly to confirm your reservation and provide any additional information or assistance you may
+                need.</p>
+        </div>
+    </div>
     </div>
 </section>

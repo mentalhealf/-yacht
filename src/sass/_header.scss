@@ -14,7 +14,7 @@
   height: 23px;
   fill: $white-color;
   color: $white-color;
-  margin: 36px 700px 36px 22px;
+  margin: 36px 740px 36px 22px;
 }
 .header-pages-list {
   list-style: none;
@@ -29,4 +29,90 @@
   height: 2px;
   background-color: $line-color;
   display: block;
+}
+.hero {
+  width: 1216px;
+  height: 598px;
+  display: flex;
+  flex-direction: row;
+  gap: 124px;
+  margin: 64px 32px 100px 32px;
+}
+.hero-left {
+  width: 538px;
+  height: 598px;
+  position: absolute;
+  z-index: 1;
+}
+.hero-folder-background {
+  width: 426px;
+  height: 598px;
+  background-image: url(/src/images/hero/hero-left.png);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  //   z-index: 1;
+}
+.man-left {
+  width: 56px;
+  height: 56px;
+  background-image: url(/src/images/hero/icon-man-left@1x.jpeg);
+  position: relative;
+  top: 32px;
+  left: 32px;
+  z-index: 3;
+}
+.woman-middle {
+  width: 56px;
+  height: 56px;
+  background-image: url(/src/images/hero/icon-woman-middle@1x.jpeg);
+  position: relative;
+  top: 32px;
+  left: 77px;
+  z-index: 2;
+}
+.man-right {
+  width: 56px;
+  height: 56px;
+  background-image: url(/src/images/hero/icon-man-right@1x.jpeg);
+  position: relative;
+  top: 32px;
+  left: 125px;
+  z-index: 1;
+}
+.txt-under-icon {
+  position: relative;
+  top: 99px;
+  left: 32px;
+}
+.overlap-man-img {
+  width: 233px;
+  height: 233px;
+  background-image: url(/src/images/hero/man-pose@1x.jpeg);
+  position: relative;
+  top: 32px;
+  left: 305px;
+  z-index: 2;
+}
+.yatch-img {
+  width: 378px;
+  height: 221px;
+  background-image: url(/src/images/hero/yatch-img@1x.jpeg);
+  position: relative;
+  top: 225px;
+  left: 24px;
+  z-index: 2;
+}
+.left-txt-box {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+.big-left-txt {
+}
+.right-txt {
+}
+.hero-right {
+  width: 554px;
+  height: 360px;
 }

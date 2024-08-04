@@ -203,6 +203,14 @@ textarea::placeholder {
 .ghost {
   position: absolute;
   right: 0;
+  width: 414px;
+  height: 414px;
+  filter: blur(200px);
+  opacity: .6;
+  background: #91afba;
+  margin: 146px -100px;
+  position: absolute;
+  transform: rotate(-45deg);
 }
 @media screen and (max-width:767px) {
   .ghost {

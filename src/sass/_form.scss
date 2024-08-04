@@ -29,7 +29,6 @@
   }
 }
 .picture__text {
-  outline: chartreuse solid 2px;
   width: 282px;
   margin-right: 0;
 }
@@ -69,7 +68,6 @@
   }
 }
 .form {
-  outline: rgb(0, 98, 255) solid 1px;
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -188,6 +186,9 @@ textarea::placeholder {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  position: absolute;
+  left: 730px;
+  top: 494px;
 }
 
 @media screen and (min-width:768px) {

@@ -1,3 +1,35 @@
-.section-customers{
-    color: cornflowerblue;
+.reviews-section {
+    padding-top: 164px;
+    padding-bottom: 164px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+body {
+    background-color: $dark-blue-color;
+    font-family: "DM Sans";
+    // color: $text-color;
+    font-size: 18px;
+    line-height: 110%;
+    font-weight: 400;
+}
+    $page-bagraund: #11131f;
+    $text-color: #f6f5ef;
+    $actzent-color: #93abae;
+html {
+    font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    tab-size: 4;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
 }

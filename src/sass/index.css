@@ -1,6 +1,41 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+.container {
+  width: 1216px;
+  margin: 0 auto;
+  outline: 2px solid chartreuse;
+  background-color: #11131F;
+}
+
 .header {
-  color: blue;
+  color: #F6F5EF;
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  margin-bottom: 0;
+}
+
+.header-logo {
+  width: 216px;
+  height: 23px;
+  fill: #F6F5EF;
+  color: #F6F5EF;
+  margin: 36px 700px 36px 22px;
+}
+
+.header-pages-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 24;
+  margin-top: 35px;
+  margin-right: 32px;
+}
+
+.header-line {
+  width: 1216px;
+  height: 10px;
+  background-color: red;
+  z-index: 3;
 }
 
 .section-adventures {
@@ -28,17 +63,554 @@
 }
 
 .section-gallery {
-  color: blueviolet;
+  background-color: #11131F;
+  color: #11131F;
+  height: 1048px;
+  position: relative;
 }
 
+.white-blur {
+  position: absolute;
+  width: 414px;
+  height: 414px;
+  margin: 146px -100px;
+  filter: blur(200px);
+  background: rgb(145, 175, 186);
+  opacity: 0.6;
+  transform: rotate(-45deg);
+}
+
+.gallery-pics {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.gallery-txt {
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 18px;
+}
+
+.diving-card {
+  width: 712px;
+  height: 632px;
+  background: rgba(17, 19, 31, 0.2), url(../images/gallery/diving@1x.jpeg);
+  border-radius: 40px;
+  position: relative;
+  margin-left: -22px;
+}
+
+.diving-txt-box {
+  background-color: #F6F5EF;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 48px;
+  padding: 14px 28px;
+  position: absolute;
+  left: 32px;
+  top: 552px;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 60px;
+}
+
+.fishing-card {
+  width: 440px;
+  height: 428px;
+  background: rgba(17, 19, 31, 0.2), url(../images/gallery/fishing@1x.jpeg);
+  border-radius: 40px;
+  position: relative;
+  margin-top: 204px;
+}
+
+.fishing-txt-box {
+  background-color: #F6F5EF;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 48px;
+  padding: 14px 28px;
+  position: absolute;
+  left: 32px;
+  top: 348px;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 60px;
+}
+
+.sunbathing-card {
+  width: 436px;
+  height: 352px;
+  background: rgba(17, 19, 31, 0.2), url(../images/gallery/sunbathing@1x.jpeg);
+  border-radius: 40px;
+  position: relative;
+  margin-left: 372px;
+  margin-top: 34px;
+}
+
+.sunbathing-txt-box {
+  background-color: #F6F5EF;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 48px;
+  padding: 14px 28px;
+  position: absolute;
+  left: 32px;
+  top: 272px;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section-gallery {
+    height: 1437px;
+    width: 768px;
+  }
+  .white-blur {
+    width: 414px;
+    height: 414px;
+    margin: 146px -100px;
+  }
+  .gallery-pics {
+    gap: 32px;
+  }
+  .diving-card {
+    width: 704px;
+    height: 632px;
+    background: rgba(17, 19, 31, 0.2), url(../images/gallery/diving@2x.jpeg);
+    margin-left: -5px;
+    background-size: cover;
+  }
+  .diving-txt-box {
+    left: 32px;
+    top: 552px;
+  }
+  .fishing-card {
+    width: 400px;
+    height: 389px;
+    background: rgba(17, 19, 31, 0.2), url(../images/gallery/fishing@2x.jpeg);
+    margin-top: 3px;
+    margin-left: 296px;
+    background-size: cover;
+  }
+  .fishing-txt-box {
+    left: 32px;
+    top: 309px;
+  }
+  .sunbathing-card {
+    background: rgba(17, 19, 31, 0.2), url(../images/gallery/sunbathing@2x.jpeg);
+    margin-left: 44px;
+    margin-top: 3px;
+    background-size: cover;
+  }
+  .sunbathing-txt-box {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 48px;
+    left: 32px;
+    top: 272px;
+  }
+  .gallery-txt {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-gallery {
+    height: 1053px;
+    width: 375px;
+  }
+  .white-blur {
+    width: 414px;
+    height: 414px;
+    margin: 146px -100px;
+  }
+  .gallery-pics {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .gallery-txt {
+    font-size: 14px;
+  }
+  .diving-card {
+    width: 335px;
+    height: 335px;
+    background: rgba(17, 19, 31, 0.2), url(../images/gallery/diving@2x.jpeg);
+    margin-left: -20px;
+    background-size: cover;
+  }
+  .diving-txt-box {
+    height: 43px;
+    left: 24px;
+    top: 268px;
+  }
+  .fishing-card {
+    width: 335px;
+    height: 335px;
+    background: rgba(17, 19, 31, 0.2), url(../images/gallery/fishing@2x.jpeg);
+    margin-top: -3px;
+    margin-left: -20px;
+    background-size: cover;
+  }
+  .fishing-txt-box {
+    height: 43px;
+    left: 24px;
+    top: 268px;
+  }
+  .sunbathing-card {
+    width: 335px;
+    height: 335px;
+    background: rgba(17, 19, 31, 0.2), url(../images/gallery/sunbathing@2x.jpeg);
+    margin-left: -20px;
+    margin-top: -3px;
+    background-size: cover;
+  }
+  .sunbathing-txt-box {
+    height: 43px;
+    left: 24px;
+    top: 268px;
+  }
+}
 .section__form {
-  color: coral;
+  background-color: #11131f;
+  color: rgb(246, 245, 239);
+  padding-bottom: 164px;
+  padding-top: 164px;
+  position: relative;
 }
 
+.did {
+  display: flex;
+  gap: 188px;
+  width: 916px;
+  height: 420px;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .did {
+    width: 704px;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .did {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 280px;
+  }
+}
+.picture__text {
+  outline: chartreuse solid 2px;
+  width: 282px;
+  margin-right: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .picture__text {
+    margin-right: 69px;
+    width: 282px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .picture__text {
+    margin-bottom: 40px;
+  }
+}
+.big__title {
+  font-family: DM Sans;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  color: rgb(246, 245, 239);
+  margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .big__title {
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .big__title {
+    font-size: 53px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .big__title {
+    font-size: 60px;
+    line-height: 66px;
+  }
+}
+.form {
+  outline: rgb(0, 98, 255) solid 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 0;
+  width: 443px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .form {
+    gap: 32px;
+    width: 364px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form {
+    width: 280px;
+  }
+}
+.form__label {
+  border-bottom: 1px solid rgb(246, 245, 239);
+  width: 443px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .form__label {
+    width: 364px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form__label {
+    width: 280px;
+  }
+}
+.form__input {
+  width: 443px;
+  background-color: #11131f;
+  color: rgb(246, 245, 239);
+  border: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .form__input {
+    width: 364px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form__input {
+    width: 280px;
+  }
+}
+.form__input:focus {
+  outline: none;
+}
+
+input::-moz-placeholder {
+  color: rgb(246, 245, 239);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: -0.045em;
+  text-align: left;
+}
+
+input:-ms-input-placeholder {
+  color: rgb(246, 245, 239);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: -0.045em;
+  text-align: left;
+}
+
+input::placeholder {
+  color: rgb(246, 245, 239);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: -0.045em;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  input::-moz-placeholder {
+    font-family: DM Sans;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  input:-ms-input-placeholder {
+    font-family: DM Sans;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  input::placeholder {
+    font-family: DM Sans;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.form__textarea {
+  resize: none;
+  border: none;
+  border-bottom: 1px solid rgb(246, 245, 239);
+  background-color: #11131f;
+  color: rgb(246, 245, 239);
+  width: 443px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .form__textarea {
+    width: 364px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form__textarea {
+    width: 280px;
+  }
+}
+.form__textarea:focus {
+  outline: none;
+}
+
+textarea::-moz-placeholder {
+  color: rgb(246, 245, 239);
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  letter-spacing: -0.045em;
+}
+
+textarea:-ms-input-placeholder {
+  color: rgb(246, 245, 239);
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  letter-spacing: -0.045em;
+}
+
+textarea::placeholder {
+  color: rgb(246, 245, 239);
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  letter-spacing: -0.045em;
+}
+
+@media screen and (min-width: 768px) {
+  textarea::-moz-placeholder {
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  textarea:-ms-input-placeholder {
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  textarea::placeholder {
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+}
+.boat__uno {
+  background-color: #11131f;
+}
+
+.form__btn {
+  background-color: #11131f;
+  color: rgb(246, 245, 239);
+  width: 132px;
+  height: 48px;
+  padding: 14px 28px 14px 28px;
+  gap: 16px;
+  border-radius: 60px;
+  border: 1px solid rgb(246, 245, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .form__btn {
+    margin-top: 0;
+  }
+}
+.form__svg {
+  fill: rgb(246, 245, 239);
+  width: 18px;
+  height: 9px;
+}
+
+.ghost {
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .ghost {
+    bottom: 0;
+  }
+}
 .section-customers {
   color: cornflowerblue;
 }
 
+.alex-footer {
+  display: flex;
+  background-color: #11131f;
+}
+
+.footer-li {
+  color: rgb(246, 245, 239);
+  font-family: cursive;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  list-style: none;
+}
+
 .footer-p {
-  color: green;
+  color: rgb(246, 245, 239);
+  font-family: cursive;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 315px;
+}
+
+.Footer-Socials {
+  height: 40px;
+  width: 152px;
+  position: relative;
+  top: 44px;
+  left: -101px;
+  display: flex;
+}
+
+.footer-footer-item {
+  color: rgba(246, 245, 239, 0.5);
+  font-family: cursive;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-ul {
+  display: flex;
+  gap: 24;
+}
+
+.footer-footer-list {
+  display: flex;
 }/*# sourceMappingURL=index.css.map */

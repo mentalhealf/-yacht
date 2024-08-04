@@ -1,3 +1,47 @@
+.alex-footer {
+  display: flex;
+  background-color: #11131f;
+}
+
+.footer-li {
+  color: rgb(246, 245, 239);
+  font-family: cursive;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+
 .footer-p {
-    color: green;
+  color: rgb(246, 245, 239);
+  font-family: cursive;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 315px;
+}
+
+.Footer-Socials {
+  height: 40px;
+  width: 152px;
+  position: relative;
+  top: 44px;
+  left: -101px;
+  display: flex;
+}
+
+.footer-footer-item {
+  color: rgba(246, 245, 239, 0.5);
+  font-family: cursive;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-ul {
+  display: flex;
+  gap: 24;
+}
+
+.footer-footer-list {
+  display: flex;
 }

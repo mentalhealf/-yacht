@@ -1,3 +1,32 @@
-.header{
-    color: blue;
+.header {
+  color: $white-color;
+  height: 90px;
+  margin-bottom: 0;
+  background-color: $dark-blue-color;
+}
+.header-box {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+}
+.header-logo {
+  width: 216px;
+  height: 23px;
+  fill: $white-color;
+  color: $white-color;
+  margin: 36px 700px 36px 22px;
+}
+.header-pages-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 24;
+  margin-top: 35px;
+  margin-right: 32px;
+}
+.header-line {
+  width: 1216px;
+  height: 2px;
+  background-color: $line-color;
+  display: block;
 }

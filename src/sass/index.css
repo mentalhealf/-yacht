@@ -58,6 +58,17 @@
   z-index: 1;
 }
 
+.hero-white-blur {
+  position: absolute;
+  width: 434px;
+  height: 424px;
+  margin: 126px -100px;
+  filter: blur(200px);
+  background: rgb(145, 175, 186);
+  opacity: 0.6;
+  transform: rotate(-45deg);
+}
+
 .hero-folder-background {
   width: 426px;
   height: 598px;
@@ -71,8 +82,8 @@
   background-image: url(/src/images/hero/icon-man-left@1x.jpeg);
   background-size: contain;
   border-radius: 50%;
-  position: relative;
-  top: -572px;
+  position: absolute;
+  top: 32px;
   left: 32px;
   z-index: 3;
 }
@@ -83,8 +94,8 @@
   background-image: url(/src/images/hero/icon-woman-middle@1x.jpeg);
   background-size: contain;
   border-radius: 50%;
-  position: relative;
-  top: -628px;
+  position: absolute;
+  top: 32px;
   left: 77px;
   z-index: 2;
 }
@@ -95,8 +106,8 @@
   background-image: url(/src/images/hero/icon-man-right@1x.jpeg);
   background-size: contain;
   border-radius: 50%;
-  position: relative;
-  top: -684px;
+  position: absolute;
+  top: 32px;
   left: 125px;
   z-index: 1;
 }
@@ -104,8 +115,8 @@
 .txt-under-icon {
   width: 96px;
   height: 15px;
-  position: relative;
-  top: -686px;
+  position: absolute;
+  top: 85px;
   left: 33px;
   color: #11131F;
   font-family: "DM Sans", sans-serif;
@@ -115,6 +126,7 @@
   letter-spacing: 4%;
   text-align: left;
   margin: 11px 0px;
+  z-index: 2;
 }
 
 .overlap-man-img {
@@ -123,8 +135,8 @@
   background-image: url(/src/images/hero/man-pose@1x.jpeg);
   border-radius: 24px;
   background-size: contain;
-  position: relative;
-  top: -778px;
+  position: absolute;
+  top: 32px;
   left: 305px;
   z-index: 2;
 }
@@ -134,8 +146,8 @@
   height: 221px;
   background-image: url(/src/images/hero/yatch-img.png);
   background-size: contain;
-  position: relative;
-  top: -825px;
+  position: absolute;
+  top: 225px;
   left: 24px;
   z-index: 2;
 }
@@ -156,8 +168,8 @@
   line-height: 110%;
   letter-spacing: -4.5%;
   text-align: left;
-  position: relative;
-  top: -825px;
+  position: absolute;
+  top: 468px;
   left: 32px;
   z-index: 2;
   margin-right: 14px;
@@ -173,9 +185,9 @@
   line-height: 110%;
   letter-spacing: -4.5%;
   text-align: left;
-  position: relative;
-  top: -810px;
-  left: 24px;
+  position: absolute;
+  top: 483px;
+  left: 181px;
   z-index: 2;
 }
 
@@ -237,6 +249,7 @@
   border-radius: 60px;
   background: #93ABAE;
   outline: none;
+  border: none;
 }
 
 .button-left:hover {
@@ -265,6 +278,194 @@
   border: 1px solid #BEC7C2;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    height: 90px;
+    margin-bottom: 0;
+  }
+  .header-box {
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+    height: 70px;
+  }
+  .header-logo {
+    width: 216px;
+    height: 23px;
+    margin: 36px 219px 36px 22px;
+  }
+  .header-pages-list {
+    display: flex;
+    flex-direction: row;
+    gap: 17;
+    margin-top: 35px;
+    margin-right: 32px;
+  }
+  .header-line {
+    width: 704px;
+    height: 2px;
+    display: block;
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+  .hero {
+    width: 768px;
+    height: 1016px;
+    display: flex;
+    flex-direction: row;
+    gap: 124px;
+    margin: 64px 42px 130px 32px;
+  }
+  .hero-left {
+    width: 538px;
+    height: 598px;
+    position: relative;
+    margin-top: 409px;
+    z-index: 1;
+  }
+  .hero-white-blur {
+    position: absolute;
+    width: 434px;
+    height: 424px;
+    margin: 126px -100px;
+    filter: blur(200px);
+    background: rgb(145, 175, 186);
+    opacity: 0.6;
+    transform: rotate(-45deg);
+  }
+  .hero-folder-background {
+    width: 426px;
+    height: 598px;
+    background-image: url(/src/images/hero/hero-left.png);
+    background-size: contain;
+  }
+  .man-left {
+    width: 56px;
+    height: 56px;
+    background-image: url(/src/images/hero/icon-man-left@2x.jpeg);
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    z-index: 3;
+  }
+  .woman-middle {
+    width: 56px;
+    height: 56px;
+    background-image: url(/src/images/hero/icon-woman-middle@2x.jpeg);
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: 32px;
+    left: 77px;
+    z-index: 2;
+  }
+  .man-right {
+    width: 56px;
+    height: 56px;
+    background-image: url(/src/images/hero/icon-man-right@2x.jpeg);
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: 32px;
+    left: 125px;
+    z-index: 1;
+  }
+  .txt-under-icon {
+    width: 96px;
+    height: 15px;
+    position: absolute;
+    top: 85px;
+    left: 33px;
+    font-size: 14px;
+    margin: 11px 0px;
+    z-index: 2;
+  }
+  .overlap-man-img {
+    width: 233px;
+    height: 233px;
+    background-image: url(/src/images/hero/man-pose@2x.jpeg);
+    border-radius: 24px;
+    background-size: contain;
+    position: absolute;
+    top: 32px;
+    left: 305px;
+    z-index: 2;
+  }
+  .yatch-img {
+    width: 378px;
+    height: 221px;
+    background-image: url(/src/images/hero/yatch-img.png);
+    background-size: contain;
+    position: absolute;
+    top: 225px;
+    left: 24px;
+    z-index: 2;
+  }
+  .left-txt-box {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+  }
+  .big-left-txt {
+    width: 130px;
+    height: 66px;
+    font-size: 60px;
+    position: absolute;
+    top: 468px;
+    left: 32px;
+    z-index: 2;
+    margin-right: 14px;
+  }
+  .right-txt {
+    width: 230px;
+    height: 36px;
+    font-size: 16px;
+    position: absolute;
+    top: 483px;
+    left: 181px;
+    z-index: 2;
+  }
+  .hero-right {
+    width: 704px;
+    height: 294px;
+    position: absolute;
+    top: 151px;
+    left: 32px;
+  }
+  .big-right-txt {
+    width: 714px;
+    height: 138px;
+    font-size: 60px;
+  }
+  .small-txt-right {
+    width: 579px;
+    height: 66px;
+    font-size: 16px;
+    margin: 16px 0px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+  }
+  .button-left {
+    width: 150px;
+    height: 48px;
+    margin-top: 32px;
+    padding: 14px 28px 14px 28px;
+    font-size: 15.5px;
+    border: none;
+  }
+  .button-right {
+    width: 137px;
+    height: 48px;
+    font-size: 16px;
+    padding: 14px 28px 14px 28px;
+    margin-top: 32px;
+  }
+}
 .section-adventures {
   color: aqua;
 }

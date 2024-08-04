@@ -426,8 +426,24 @@
   color: aqua;
 }
 
+:root {
+  --back-color: #1F212D;
+  --text-color: #F6F5EF;
+}
+
 .section-cards {
-  color: aquamarine;
+  width: 1216px;
+  height: 508px;
+  top: 2462px;
+  left: 32px;
+  gap: 11px;
+}
+
+.yaht-item {
+  width: 354px;
+  height: 508px;
+  background-color: var(--back-color);
+  list-style: none;
 }
 
 .section-gallery {

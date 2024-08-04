@@ -1,3 +1,117 @@
-.section-customers{
-    color: cornflowerblue;
+.reviews-section {
+    padding-top: 164px;
+    padding-bottom: 164px;
+    @media screen and (min-width: 768px){}
+    @media screen and (min-width: 1200px){}
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+    $page-bagraund: #11131f;
+    $text-color: #f6f5ef;
+    $actzent-color: #93abae;
+html {
+    font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    tab-size: 4;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.reviews-sublist {
+    display: flex;
+    gap: 446px;
+}
+.reviews-article {
+    background: #1f212d;
+    border-radius: 24px;
+    justify-content: center;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+}
+.reviews-photo {
+    width: 56px;
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.reviews-description {
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+}
+.reviews-info {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -1.44px;
+}
+.reviews-name {
+    color: var(--actzent-color);
+    font-style: italic;
+}
+.reviews-text {
+    color: var(--actzent-color);
+    text-align: center;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+    margin-top: 8px;
+}
+.reviews-title {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: -0.81px;
+    margin-top: 24px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--page-bagraund);
+    font-family: DM Sans;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 110%;
+    font-weight: 400;
+    @media screen and (min-width: 768px){}
+    @media screen and (min-width: 1200px){}
+}
+.reviews-list {
+    display: flex;
+    border-radius: 24px;
+    gap: 32px;
+    margin-top: 64px;
+    @media screen and (min-width: 768px){}
+    @media screen and (min-width: 1200px){}
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+:root {
+    --page-bagraund: #11131f;
+    --text-color: #f6f5ef;
+    --actzent-color: #93abae;
 }

@@ -7,7 +7,12 @@
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
-        <img width="24" height="24" src="/src/images/hero/gg_menu-left.svg" />
+        <img
+          width="24"
+          height="24"
+          class="burger"
+          src="/src/images/hero/gg_menu-left.svg"
+        />
       </button>
       <ul class="header-pages-list">
         <li class="header-page">
@@ -61,14 +66,16 @@
 </section>
 
 <div class="menu-container js-menu-container" id="mobile-menu">
+  <img src="./images/logo.svg" alt="logo" class="phone-header-logo" />
   <button class="menu-toggle js-close-menu">
-    <img width="24" height="24" src="/src/images/hero/x.svg" />
+    <img src="/src/images/hero/x.svg" />
   </button>
-
+  <div class="phone-header-line"></div>
+  <div class="phone-menu-white-blur">
   <ul class="mobile-menu">
-    <li class="list-item"><a href="#" class="link">Home</a></li>
-    <li class="list-item"><a href="#" class="link">Services</a></li>
-    <li class="list-item"><a href="#" class="link">Portfolio</a></li>
+    <li class="list-item"><a href="#" class="link">ABOUT</a></li>
+    <li class="list-item"><a href="#" class="link">YACHTS</a></li>
+    <li class="list-item"><a href="#" class="link">REVIEWS</a></li>
   </ul>
 </div>
 
@@ -79,4 +86,3 @@
   crossorigin="anonymous"
 ></script>
 <script defer src="./mobile-menu.js"></script>
-F

@@ -259,6 +259,9 @@
   .menu-toggle {
     display: none;
   }
+  .burger {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -266,6 +269,9 @@
     display: none;
   }
   .menu-toggle {
+    display: none;
+  }
+  .burger {
     display: none;
   }
   .header {
@@ -345,13 +351,13 @@
   .header-logo {
     width: 172px;
     height: 18px;
-    margin: 27px 139px 27px 20px;
+    margin: 27px 220px 20px 20px;
   }
   .header-pages-list {
     display: none;
   }
   .header-line {
-    width: 335px;
+    width: 440px;
     height: 2px;
     display: block;
     margin-top: 25px;
@@ -368,7 +374,7 @@
     width: 335px;
     height: 427px;
     position: relative;
-    margin-top: 453px;
+    margin-top: 413px;
     z-index: 1;
   }
   .hero-white-blur {
@@ -382,7 +388,7 @@
     transform: rotate(-45deg);
   }
   .hero-folder-background {
-   width: 335px;
+    width: 335px;
     height: 467px;
     background-image: url(/src/images/hero/hero-left.png);
     background-size: contain;
@@ -486,23 +492,15 @@
     padding: 14px 28px 14px 28px;
     margin-top: 24px;
   }
+  .burger {
+    cursor: pointer;
+  }
 }
 .menu {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-.menu .link {
-  padding: 10px;
-  color: inherit;
-  text-decoration: none;
-}
-
-.menu .link:hover,
-.menu .link:focus {
-  text-decoration: underline;
 }
 
 .menu-toggle {
@@ -533,9 +531,9 @@
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: var(--DBG-color--);
-  z-index: 999;
-
+  background-color: $dark-blue-color;
+  z-index: 4;
+  display: flex;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -546,24 +544,58 @@
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
+  top: 26px;
   right: 16px;
-  color: var(--amazing-color--);
+  color: $white-color;
+}
+.phone-header-logo {
+  width: 172px;
+  height: 18px;
+  margin: 7px 220px 20px 20px;
+}
+
+.phone-header-line {
+  width: 440px;
+  height: 2px;
+  display: block;
+  background-color: $line-color;
+  margin-top: 45px;
+  margin-left: 30px;
+}
+
+.phone-menu-white-blur {
+  position: absolute;
+  width: 434px;
+  height: 424px;
+  margin-top: 470px;
+  margin-right: 130px;
+  filter: blur(200px);
+  background: rgb(145, 175, 186);
+  opacity: 0.6;
+  transform: rotate(-45deg);
 }
 
 .mobile-menu {
+  width: 156px;
+  height: 212px;
+  display: flex;
+  flex-direction: column;
+ gap: 0;
   padding: 0;
-  margin: 0;
+  margin-top: 212px;
+  // margin-right: 155px;
   list-style: none;
 }
 
 .mobile-menu .link {
   display: block;
-  padding: 10px;
-  color: var(--amazing-color--);
-  text-transform: uppercase;
-  font-family: var(--gtext-font);
+  padding: 2px;
+  color: $white-color;
+  font-family: $DM-sans-font-family;
   font-size: 14px;
-  line-height: 41px;
   text-decoration: none;
+}
+
+body.menu-open {
+  overflow: hidden;
 }

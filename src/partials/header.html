@@ -2,11 +2,23 @@
   <div class="container">
     <div class="header-box">
       <img src="./images/logo.svg" alt="logo" class="header-logo" />
-
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <img width="24" height="24" src="/src/images/hero/gg_menu-left.svg" />
+      </button>
       <ul class="header-pages-list">
-        <li class="header-page"><a class="header-page-txt">ABOUT</a></li>
-        <li class="header-page"><a class="header-page-txt">YACHTS</a></li>
-        <li class="header-page"><a class="header-page-txt">REVIEWS</a></li>
+        <li class="header-page">
+          <a class="header-page-txt" href="#">ABOUT</a>
+        </li>
+        <li class="header-page">
+          <a class="header-page-txt" href="#">YACHTS</a>
+        </li>
+        <li class="header-page">
+          <a class="header-page-txt" href="#">REVIEWS</a>
+        </li>
       </ul>
     </div>
     <div class="header-line"></div>
@@ -25,12 +37,21 @@
       <div class="yatch-img"></div>
       <div class="left-txt-box">
         <div class="big-left-txt">$12M</div>
-        <div class="right-txt">Book now and make your dream yacht rental a reality</div>
+        <div class="right-txt">
+          Book now and make your dream yacht rental a reality
+        </div>
       </div>
     </div>
     <div class="hero-right">
-      <div class="big-right-txt">Explore the High Seas with <span class="blue-right-txt">Our Luxury Yacht</span> Rentals</div>
-      <div class="small-txt-right">Experience the freedom and luxury of yachting on the open seas. Choose from our top-of-the-line yachts and embark on an unforgettable journey surrounded by breathtaking views and state-of-the-art amenities.</div>
+      <div class="big-right-txt">
+        Explore the High Seas with
+        <span class="blue-right-txt">Our Luxury Yacht</span> Rentals
+      </div>
+      <div class="small-txt-right">
+        Experience the freedom and luxury of yachting on the open seas. Choose
+        from our top-of-the-line yachts and embark on an unforgettable journey
+        surrounded by breathtaking views and state-of-the-art amenities.
+      </div>
       <div class="buttons">
         <button class="button-left">Get Started</button>
         <button class="button-right">Explore</button>
@@ -39,3 +60,23 @@
   </div>
 </section>
 
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <img width="24" height="24" src="/src/images/hero/x.svg" />
+  </button>
+
+  <ul class="mobile-menu">
+    <li class="list-item"><a href="#" class="link">Home</a></li>
+    <li class="list-item"><a href="#" class="link">Services</a></li>
+    <li class="list-item"><a href="#" class="link">Portfolio</a></li>
+  </ul>
+</div>
+
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script defer src="./mobile-menu.js"></script>
+F
